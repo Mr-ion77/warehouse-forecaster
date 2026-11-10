@@ -1,0 +1,7 @@
+legacy_reference/
+notebooks/
+tests/
+data/ensaladilla.xls
+.git/
+.devcontainer/
+**/__pycache__/
