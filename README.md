@@ -39,8 +39,6 @@ is the estimated stockout date.
 │   ├── models/forecast.py    the stockout forecaster (single source of truth)
 │   ├── models/alerts.py      bulk alert tables
 │   └── utils/plotting.py     plotly (app) and matplotlib (notebook) charts
-├── tests/test_equivalence.py
-└── legacy_reference/         frozen copy of the pre-refactor code (used by the tests)
 ```
 
 ## Usage
@@ -50,7 +48,6 @@ pip install -e ".[dev]"
 streamlit run scripts/streamlit_app.py          # dashboard on :8501
 python scripts/stockout_report.py --days 30     # text alert report
 python scripts/generate_synthetic_data.py --seed 42
-pytest
 ```
 
 Run commands from the repository root: data paths are relative to it. You can override the

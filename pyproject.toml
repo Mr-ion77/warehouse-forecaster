@@ -18,10 +18,7 @@ dependencies = [
 [project.optional-dependencies]
 app = ["streamlit", "plotly", "matplotlib", "jinja2"]
 notebooks = ["matplotlib", "xlrd", "jupyter"]
-dev = ["pytest", "streamlit", "plotly", "matplotlib", "jinja2", "xlrd"]
+dev = ["streamlit", "plotly", "matplotlib", "jinja2", "xlrd"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
