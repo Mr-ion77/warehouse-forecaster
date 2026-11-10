@@ -1,3 +1,2 @@
-streamlit
-pandas
-plotly
+# Deployment requirements (Streamlit app). For development use: pip install -e ".[dev]"
+-e .[app]

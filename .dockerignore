@@ -1,0 +1,5 @@
+notebooks/
+data/ensaladilla.xls
+.git/
+.devcontainer/
+**/__pycache__/

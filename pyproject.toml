@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "warehouse-forecaster"
+version = "0.1.0"
+description = "Inventory stock reconstruction and stockout forecasting with a Streamlit dashboard."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    # The cleaning code relies on pandas 2.x `object` dtype for text columns;
+    # pandas 3 switches to a `str` dtype and skips the decimal-comma conversion.
+    "pandas>=2.0,<3",
+    "numpy",
+]
+
+[project.optional-dependencies]
+app = ["streamlit", "plotly", "matplotlib", "jinja2"]
+notebooks = ["matplotlib", "xlrd", "jupyter"]
+dev = ["streamlit", "plotly", "matplotlib", "jinja2", "xlrd"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
